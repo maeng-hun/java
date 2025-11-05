@@ -1,0 +1,17 @@
+package basic.operator;
+
+public class OperatorAdd1 {
+    public static void main(String[] args) {
+        int a =0;
+        int b =1;
+        b = ++a;
+        System.out.println("a = " + a + ",b=" + b);
+
+        a = 1;
+        b = 0;
+        b= a++;
+        System.out.println("a = " + a + ",b=" + b);
+
+
+    }
+}
