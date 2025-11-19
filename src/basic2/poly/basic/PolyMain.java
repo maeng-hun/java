@@ -1,0 +1,24 @@
+package basic2.poly.basic;
+
+public class PolyMain {
+
+    public static void main(String[] args) {
+        // 부모 변수가 부모 인스턴스 참조
+        System.out.println("부모 -> 부모");
+        Parent parent = new Parent();
+        parent.parentMethod();
+
+        // 자식 변수가 자식 인스턴스 참조
+        System.out.println("자식-> 자식");
+        Child child = new Child();
+        child.parentMethod();
+        child.childMethod();
+        
+        // 부모 변수가 자식 인스턴스 참조(다형성 참조)
+        System.out.println("부모 -> 자식");
+        Parent poly = new Child();
+        poly.parentMethod();
+        // 자식은 부모를 담을 수 없고, 자식 기능 못 사용
+
+    }
+}
